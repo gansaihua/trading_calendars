@@ -45,6 +45,7 @@ from .exchange_calendar_xpra import XPRAExchangeCalendar
 from .exchange_calendar_xses import XSESExchangeCalendar
 from .exchange_calendar_xsgo import XSGOExchangeCalendar
 from .exchange_calendar_xshg import XSHGExchangeCalendar
+from .exchange_calendar_xsge import XSGEExchangeCalendar
 from .exchange_calendar_xsto import XSTOExchangeCalendar
 from .exchange_calendar_xswx import XSWXExchangeCalendar
 from .exchange_calendar_xtai import XTAIExchangeCalendar
@@ -98,6 +99,7 @@ _default_calendar_factories = {
     'XSES': XSESExchangeCalendar,
     'XSGO': XSGOExchangeCalendar,
     'XSHG': XSHGExchangeCalendar,
+    'XSGE': XSGEExchangeCalendar,
     'XSTO': XSTOExchangeCalendar,
     'XSWX': XSWXExchangeCalendar,
     'XTAI': XTAIExchangeCalendar,
@@ -147,6 +149,7 @@ class TradingCalendarDispatcher(object):
     aliases : dict[str -> str]
         Calendar name aliases.
     """
+
     def __init__(self, calendars, calendar_factories, aliases):
         self._calendars = calendars
         self._calendar_factories = dict(calendar_factories)
