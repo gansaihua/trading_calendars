@@ -127,7 +127,7 @@ _default_calendar_aliases = {
     'ICE': 'IEPA',
     'ICEUS': 'IEPA',
     'NYFE': 'IEPA',
-    'CFE': 'XCBF',
+    # 'CFE': 'XCBF',
     'JKT': 'XIDX',
 }
 default_calendar_names = sorted(_default_calendar_factories.keys())
